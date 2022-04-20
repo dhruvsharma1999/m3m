@@ -1,0 +1,43 @@
+@mixin box-shadow($x,$y,$b,$s,$o){
+	box-shadow: $x $y $b $s rgba(0,0,0,$o);
+	-webkit-box-shadow: $x $y $b $s rgba(0,0,0,$o);
+	-moz-box-shadow: $x $y $b $s rgba(0,0,0,$o);
+	-ms-box-shadow: $x $y $b $s rgba(0,0,0,$o);
+	-o-box-shadow: $x $y $b $s rgba(0,0,0,$o);
+}
+@mixin rotate($deg){
+	transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-o-transform: rotate($deg);
+}
+@mixin translate($tr, $trr) {
+	transform: translate($tr, $trr);
+	-webkit-transform: translate($tr, $trr);
+	-moz-transform: translate($tr, $trr);
+	-ms-transform: translate($tr, $trr);
+	-o-transform: translate($tr, $trr);
+}
+@mixin transition($s){
+	transition: all $s ease;
+	-webkit-transition: all $s ease;
+	-moz-transition: all $s ease;
+	-o-transition: all $s ease;
+	-ms-transition: all $s ease;
+}
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@mixin scale($a){
+	-webkit-transform: scale($a);
+	-moz-transform: scale($a);
+	-ms-transform: scale($a);    
+	-o-transform: scale($a);
+    transform: scale($a);
+
+}

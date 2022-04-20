@@ -1,0 +1,265 @@
+
+
+.navbar .dropdown-menu .dropdown-item:hover .nav-link{
+    color :#fff;
+}
+
+.text-primary{
+    color:$primary !important; 
+}
+
+.text-secondary{
+    color:$default !important;
+}
+.fw-bold{
+    font-weight: 500 !important;
+}
+.fw-bolder{
+    font-weight: 700 !important;
+}
+.form-check-input{
+    border-color: $default !important;
+    margin-top: 0px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    label{
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 575.98px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+.form-check-input:checked {
+    background-color:$white;
+    border-color: $primary !important;
+   
+    height: 20px;
+    width: 20px;
+    @media only screen and (max-width: 575.98px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+.form-check-input[type=checkbox]{
+
+    border-radius: 0px !important;
+ 
+}
+.form-check-input:checked[type=radio] {
+    background-image: url('../../assets/images/radio-button-on.svg');    background-size: 12px;
+
+}
+.form-check-input:checked[type=checkbox]{
+    background-image: url('../../assets/images/material-check.svg');
+    background-size: 14px;
+    
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+
+
+}
+
+.breadcrumb{
+    padding: 20px 0px !important;
+    align-items: center;
+    margin: 0px;
+    .breadcrumb-item {
+        &::before{
+            content: '\E80A';
+            font-family: "mhc-icon";
+            font-weight: normal;
+            font-style: normal;
+        }
+        &:first-child::before{
+            content: ''; 
+        }
+        a{
+            color: lighten($default, 20%);
+            text-decoration: none;
+            font-size: 14px;    
+            @media only screen and (max-width: 767.98px) {
+                font-size: 13px;   
+            }
+            @media only screen and (max-width: 575.98px) {
+                font-size: 12px;   
+            }
+            cursor: pointer;
+            &:active, &:hover{
+                color: darken($default, 10%);
+            }
+        }
+        &.active{
+            color: $default;
+            font-weight: 500;
+            font-size: 0.875rem; 
+            @media only screen and (max-width: 767.98px) {
+                font-size: 0.813rem;   
+            }
+            @media only screen and (max-width: 575.98px) {
+                font-size: 0.75rem;   
+            }  
+        }
+    }
+}
+
+.form-floating{
+    .form-control {
+        padding-left: 14px;
+        height: calc(1.6em + .75rem + 2px) !important;
+    }
+    .form-select{
+        padding-left: 14px;
+        height: calc(1.6em + .75rem + 2px) !important;
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+  label{
+    padding: 10px 5px 0px !important;
+    font-size: 0.938rem;
+    margin-left: 7px;
+    height: 20px;
+  }
+}
+
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+    transform: scale(.85) translateY(-1.2rem) translateX(0.15rem) !important;
+    background: $white;
+    opacity: 1;
+    color: $primary;
+}
+.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown){
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.form-select{
+    height: calc(1.6em + .75rem + 2px) !important;
+    padding: 0.575rem 2.25rem 0.375rem 0.75rem;
+}
+.accordion-button:focus{
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+.specialitiestabs{
+  
+    .accordion-item{
+        border:solid 0px $white;
+      
+        align-items: flex-start;
+        .accordion-header{
+            font-size: 1rem;
+          a{
+              color: $default;
+              font-weight: 600;
+              text-decoration: none;
+          }
+            border-bottom: solid 1px $light-border;
+            img{
+                width: auto;
+                height: 30px;
+                margin-right: 10px;
+            }
+            .accordion-button{
+                padding: 7px 10px 7px 0px;
+                color: $default;
+                font-weight: 500;
+                &:after{
+                    background-image:url("../../assets/images/ionic-ios-arrow-back.svg");
+                    background-size: 13px;
+                    width: 16px;
+                    height: 16px;  
+                }
+                &:not(.collapsed)::after{
+                    background-image:url("../../assets/images/ionic-ios-arrow-back.svg");
+                    background-size: 13px; 
+                  
+                }
+                &:not(.collapsed){
+                    color: $default;
+                    background-color: $white;
+                    box-shadow: none;
+                }
+                &:focus{
+                    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+                }
+            }
+
+        }
+        .accordion-body{
+            padding: 10px 0px 0px;
+            .list-unstyled{
+                margin-bottom: 0px;
+                @media only screen and (max-width: 991.98px) {
+margin-left: 35px;
+                }
+                li{
+                    padding: 10px 0px;
+                    a{
+                     text-decoration: none; 
+                     color: $default;  
+                     &:hover, &:focus{
+                        color: $primary;   
+                     }
+                    }
+                }
+            }
+        }
+    }
+}
+.gy-4 .col{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.fs-4 {
+    font-size: 1.3rem!important;
+}
+.fs-5 {
+    font-size: 1.2rem!important;
+}
+.fs-7{
+    font-size: 1.063rem !important;
+}
+.fs-13{
+    font-size: 0.813rem;
+}
+.cursor-pointer{
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+.border-light{
+    border-color: $light-border !important;
+}
+.transition{
+    @include transition(.2s);
+}
+.rounded-1 {    
+    border-radius: 0.25rem !important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+.accordion-item{
+    background: transparent !important;
+}
+.modal-content{
+    z-index: 0;
+}
+@media only screen and (max-width: 575.98px) {
+ 
+    .fs-4 {
+        font-size: 1.1rem!important;
+    }
+    .fs-5{
+        font-size: 1.1rem !important;
+    }
+    // .fs-6 {
+    //     font-size: 1rem!important;
+    // }
+    .fs-7{
+        font-size: 1rem !important;
+    }
+}

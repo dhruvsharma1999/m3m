@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="133" height="55" viewBox="0 0 133 55">
+    <g data-name="Group 328">
+        <text data-name="10" transform="translate(0 26)" style="font-family:MyriadPro-Bold,Myriad Pro;font-weight:700;font-size:35px;letter-spacing:-.05em;fill:#f37b89"><tspan x="0" y="0">10</tspan></text>
+        <text data-name="%" transform="translate(40 23)" style="letter-spacing:-.03em;font-size:31px;font-family:MyriadPro-Bold,Myriad Pro;font-weight:700;fill:#f37b89"><tspan x="0" y="0">%</tspan></text>
+        <text transform="translate(74 27)" style="font-size:36px;font-family:MyriadPro-Semibold,Myriad Pro;font-weight:600;letter-spacing:-.03em;fill:#f37b89"><tspan x="0" y="0">off</tspan></text>
+        <text data-name="on Medicines" transform="translate(3 52)" style="fill:#666;font-size:20px;font-family:Gotham-Book,Gotham"><tspan x="0" y="0">on Medicines</tspan></text>
+    </g>
+</svg>

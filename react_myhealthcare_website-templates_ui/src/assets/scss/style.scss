@@ -1,0 +1,25 @@
+/**
+ *  Main CSS file for HIS
+ *  
+ *  @author Sanjay
+ *  @version 1.0.0
+ *  @copyright MyHealthcare Pvt. Ltd.
+ */
+
+
+
+
+                
+@import 'variables';
+@import 'mixins';
+@import 'layout';
+@import 'bootstrap-override';
+@import 'default';
+@import 'header';
+@import 'aside-nav';
+@import 'form';
+@import 'table';
+@import 'plugins';
+@import 'modal';
+@import 'icons';
+

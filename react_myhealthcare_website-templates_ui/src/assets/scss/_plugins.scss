@@ -1,0 +1,46 @@
+/* ############################## Date Time Picker ##########################################*/
+.bootstrap-datetimepicker-widget{z-index: 99999; padding: 3px!important; max-width: 285px;
+    ul li div{padding: 0px!important; margin: 0px!important; }
+    
+    table{background-color:$white!important; margin: 0px!important; padding: 0px!important;
+        thead tr{background-color:$table_thead_bg!important;
+            th{
+                background-color:$table_thead_bg!important; 
+                border-radius:0px!important; 
+                border: solid 1px rgba(0,0,0,0.1)!important; 
+                color: $white!important; 
+                font-weight: 400!important; 
+                text-transform: uppercase!important;
+                padding: 0.5rem!important;
+  
+            }
+        }
+        tbody tr{background-color:$white!important;
+            td{background:$white!important; border-radius: 0px!important; border: solid 1px rgba(0,0,0,0.1)!important; padding: 0.5rem!important;
+                width: 1rem!important; height:1rem!important; line-height:1rem!important; 
+                &.active{background-color:$bg_alice_blue!important; color: $black!important;}
+                &.today{background-color: $primary!important; color: $white!important;
+                    &::before{display: none!important;}
+                }
+  
+                &:hover{background-color:$bg_alice_blue!important}
+                
+               
+            }
+  
+            
+        }
+    }
+  
+    .btn.btn-primary{background-color: $bg_dark!important; border-color: $bg_dark!important;}
+    .accordion-toggle td{background-color: #f9f9f9!important;
+         i{font-size: 20px; color: $bg_dark; cursor: pointer;}
+         i.icon-ok{color: $success;}
+    }
+  
+    .timepicker tr{background-color: #fff!important;
+    
+        td{border: none!important;}
+    }
+    table tfoot td i{font-size: 35px;;}
+  } 

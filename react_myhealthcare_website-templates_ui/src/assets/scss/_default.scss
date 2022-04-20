@@ -1,0 +1,2661 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+body, html {font-family: Roboto,sans-serif; font-size: 0.95rem; min-height: 100vh; color: $default-color;}
+.page-title{font-size:1.25rem; font-weight:400}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamBook.ttf'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamMedium.ttf');  
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  body{
+    // font-family: 'Gotham';
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color:$default;
+    overflow-x: hidden;
+    font-size: 1rem !important;
+    line-height: 1.3;
+    // @include transition(.2s);
+    // @media only screen and (max-width: 575.98px) {
+    //   font-size: 0.9rem !important;
+    // }
+  }
+
+
+  .mhc-home-banner{
+    width: 100%;
+    height: 500px;
+    background: #f8f8f8;
+    background-image: url(../images/home-banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    position: relative;
+    @media only screen and (max-width:991.98px) {
+      height: 330px;
+      background-image: url(../images/home-banner-mobile.webp);
+      background-position: center center;
+    }
+  .mhc-banner-text{
+    position: relative;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+    h1{
+     font-size: 2.25rem;
+     color: $default;
+     text-align: center;
+     @media only screen and (max-width: 991.98px) {
+      text-align: left;
+      font-size: 2rem;
+     }
+     @media only screen and (max-width: 767.98px) {
+      font-size: 1.875rem;
+     }
+     @media only screen and (max-width: 575.98px) {
+      font-size: 1.625rem;
+     }
+    }
+    
+    .input-group{
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      .input-group-text{
+     border-radius: 10px;
+        color: $primary;
+        height: calc(1.6em + 0.75rem + 12px) !important;
+        background-color: $white;
+        border-color: $white;
+      }
+    .form-select{
+      padding: 10px 15px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      height: calc(1.6em + 0.75rem + 12px) !important;
+    }
+    .form-control{
+      border-color: $white;
+      // padding: 10px 15px;
+      // height: calc(1.4em + 0.75rem + 10px);
+      // border-bottom-right-radius: 10px;
+      // border-top-right-radius: 10px;
+    }
+    }
+    .btn-search{
+      position: absolute;
+      right: 20px;
+      top: 7px;
+    padding: 2px 15px;
+    z-index: 99;
+    @media only screen and (max-width: 991.98px) {
+      position: relative;
+      margin-top: 15px;
+    }
+    }
+    .rounded-3{
+      border-radius: 10px !important;
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    }
+    .list-inline{
+      padding: 20px 0px;
+    
+      li{
+        display: flex;
+        align-items: center;
+        padding: 0px 15px;
+        text-align: left;
+        border-right:solid 1px $default;
+        a{
+          color: $default;
+          text-decoration: none;
+          @include transition(.3s);
+          &:hover{
+            text-decoration: none;
+          }
+        }
+        .image-holder{       
+          @include transition(.3s);
+          img{
+            width: 45px;
+            height: 45px;
+            @include transition(.3s);
+            // margin-right: 10px;
+        
+          }
+        }
+        span{
+          font-size: 0.938rem;
+          // font-weight: 500;
+          font-weight: 600;
+          padding-left: 10px;
+        }
+        &:hover .image-holder{
+          @include transition(.3s);
+          transform: translateY(-10px);
+    
+        }
+        &:last-child{
+          border-right: 0px solid;
+        }
+      }
+    }
+  .call-assistance{
+  
+    span{
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  }
+  }
+
+  .our-partner{
+    background: $white_mute;
+    padding: 20px 0px;
+    p{
+      font-size: 1.3rem;
+    font-weight: 700;
+    }
+  .slick-slider{
+    .slick-arrow{
+      display: none !important;
+    }
+    .slick-slide{
+ position: relative;
+
+      img{
+        width: 120px !important;
+        height: auto;
+        @media only screen and (max-width: 767.98px) {
+          width: 90px !important;
+        }
+        @media only screen and (max-width: 767.98px) {
+          width: 60px !important;
+        }
+      }
+    }
+  }
+  }
+
+
+  .specialized-categories{
+    position: relative;
+    padding:40px 0px;
+    min-height: 370px;
+    @media only screen and (max-width: 991.98px) {
+      padding:30px 0px;
+      min-height: auto;
+    }
+    @media only screen and (max-width: 575.98px) {
+      padding:20px 0px;
+    }
+    h1{
+      font-size: 2.25rem;
+      @media only screen and (max-width: 991.98px) {
+        font-size: 2rem;
+      }
+      @media only screen and (max-width: 767.98px) {
+        font-size: 1.875rem;
+      }
+      @media only screen and (max-width: 575.98px) {
+        font-size: 1.563rem;
+      }
+    }
+    .spicialize-card{
+      background: $bg_sp_card;
+
+      border-radius: 20px;
+      text-align: center;
+      padding: 15px;
+      cursor: pointer;
+      height: 120px;
+      @include transition(.2s);
+            p{
+              font-weight: 500;
+            }
+            .img-holder{
+              background: $white;
+              width:60px;
+              height: 60px;
+              padding: 10px;
+              border-radius: 50%;
+              margin: auto ;
+              position: relative;
+              @media only screen and (max-width: 575.98px) {
+                width:50px;
+                height: 50px;
+              }
+              img{
+                width:40px;
+                height: 40px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                @include translate(-50%, -50%);
+                @media only screen and (max-width: 575.98px) {
+                  width:35px;
+                  height: 35px;
+                }
+              }
+            }
+    
+      .btn-light{
+        background:$bg_sp_card !important ;
+        border-color:$bg_sp_card !important ;
+        display: block;
+        color: $primary !important;
+        padding: 0.325rem !important;
+        font-size: 0.813rem;
+        opacity: 0;
+        font-weight: 500;
+        @include transition(.2s);
+        @media only screen and (max-width: 991.98px) {
+           display: none;
+        }
+      }
+      &:hover{
+        background: $white;
+        height: auto;
+        box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.05);
+   
+      }
+      &:hover .btn-light{
+       opacity: 1;
+        @media only screen and (max-width: 991.98px) {
+          display: none;
+        }
+      }
+      &:hover .img-holder{
+        background: $bg_sp_card;
+      
+      }
+      @media only screen and (max-width: 991.98px) {
+               height: auto;
+      }
+    }
+    .btn-primary{
+      position: absolute;
+      bottom: 30px;
+      font-weight: 500;
+      @include transition(.2s);
+      .icon-right{
+font-size: 0.813rem !important;
+@include transition(.2s);
+@media only screen and (max-width: 991.98px) {
+display: none;
+}
+      }
+      @media only screen and (max-width: 991.98px) {
+        position: relative;
+        bottom: 0px;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .mhc-partners-digital-journey{
+    @include transition(.2s);
+    margin-top: 40px;
+    @media only screen and (max-width: 991.98px) {
+      padding-bottom: 30px;
+      margin-top: 0px;
+    }
+    .mob-img{
+      width: 100%;
+      // height: 632px;
+    }
+    h1{
+      font-size: 2.25rem;
+      margin-top: 50px;
+      @media only screen and (max-width: 1199.98px) {
+        margin-top: 30px;
+      }
+      @media only screen and (max-width: 991.98px) {
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+      @media only screen and (max-width: 767.98px) {
+        font-size: 1.875rem;
+      }
+      @media only screen and (max-width: 575.98px) {
+        font-size: 1.563rem;
+      }
+    }
+    .content{
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      @media only screen and (max-width: 1199.98px) {
+        margin-top: 30px;
+      }
+      @media only screen and (max-width: 991.98px) {     
+        align-items: flex-start;
+      }
+      .icon{
+        width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    @media only screen and (max-width: 991.98px) {
+      width: 60px;
+      height: 60px;
+    }
+    @media only screen and (max-width: 575.98px) {
+      width: 50px;
+      height: 50px;
+    }
+      }
+      h4{
+        font-size: 1.25rem;
+        font-weight: 500;
+        @media only screen and (max-width: 991.98px) {
+          font-size: 1.125rem;
+        }
+        @media only screen and (max-width: 575.98px) {
+          font-size: 1rem;
+        }
+      }
+      p{
+        margin: 0px;
+        font-size: 0.938rem;
+        color: $default;
+      }
+    }
+  }
+
+  .mhc-our-journey{
+    padding: 30px 0px;
+    width: 100%;
+    @include transition(.2s);
+    background: #f8f8f8;
+    background-image: url(../images/mhc-our-journey-left.webp),url(../images/mhc-our-journey-right.webp) ;
+    background-repeat: no-repeat,  no-repeat;
+    background-position: left bottom, top right;
+    h1{
+      font-size: 2.25rem;
+      @media only screen and (max-width: 991.98px) {
+        font-size: 2rem;
+      }
+      @media only screen and (max-width: 767.98px) {
+        font-size: 1.875rem;
+      }
+      @media only screen and (max-width: 575.98px) {
+        font-size: 1.563rem;
+      }
+    }
+.mhc-journey-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  padding: 20px 25px;
+  margin: 0px 5px;
+  .icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    @media only screen and (max-width: 991.98px) {
+      width: 40px;
+      height: 40px;
+    }
+    @media only screen and (max-width: 575.98px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+    .icon-right{
+      font-size: 0.813rem;
+    }
+
+  }
+
+  .mhc-latest-news{
+    @include transition(.2s);
+    padding: 40px 0px 0px;
+    h1{
+      font-size: 2.25rem;
+      @media only screen and (max-width: 991.98px) {
+        font-size: 2rem;
+      }
+      @media only screen and (max-width: 767.98px) {
+        font-size: 1.875rem;
+      }
+      @media only screen and (max-width: 575.98px) {
+        font-size: 1.563rem;
+      }
+    }
+    .mhc-latest-new-card{
+      box-shadow: 0 3px 10px 0 rgba(72, 72, 72, 0.05);
+      border-radius: 10px;
+      margin: 0px 10px;
+      figure img{
+        width: 100%;
+      }
+      h2{
+        font-size: 1.125rem;
+        @media only screen and (max-width: 991.98px) {
+          font-size: 1rem;
+        }
+        @media only screen and (max-width: 575.98px) {
+          font-size: 0.938rem;
+        }
+      }
+    }
+    .icon-right{
+      font-size: 0.813rem;
+    }
+  }
+
+  .mhc-download-mobile{
+    @include transition(.2s);
+    width: 100%;
+    height: 320px;
+    margin-top: 80px;
+    background: #f8f8f8;
+    background-image: url(../images/mhc-download-mobile.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: $white;
+    @media only screen and (max-width: 991.98px) {
+      margin-top: 40px;
+    }
+    .icon{
+      width: 100%;
+      width: auto;
+      margin-top: -40px;
+      height: 360px;
+  
+    }
+    .icon-downlod{
+            height: 45px;
+            @media only screen and (max-width: 575.98px) {
+              height: 40px;
+            }
+   
+    }
+  }
+  .mhc-mobile-menu{
+    box-shadow: 0 -7px 30px 0 rgb(0 0 0 / 5%);
+    padding: 0px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: $primary;
+    z-index: 1000;
+    overflow: auto;
+  
+    ul{
+      li{
+        padding: 10px 10px;
+        @media only screen and (max-width: 575.98px) {
+          margin-right: 0!important;
+          padding: 4px 12px;
+          min-width: 55px;
+        }
+
+        a{
+          text-decoration: none;
+          &:hover{
+            text-decoration: none; 
+          }
+          .image-holder{
+            background: $white;
+    border-radius: 50%;
+    margin-bottom: 0px;
+    i{
+      font-size: 2.2rem;
+      color: $primary;
+    }
+          }
+
+          span{
+            text-decoration: none;
+            color: $white;
+            font-size: 0.825rem;
+            line-height: 1.1;
+            font-weight: 300;
+            text-align: center;
+          
+          }
+        }
+      
+        &:hover, &:focus{
+          background: $white;
+        }
+        &:hover .image-holder, &:focus .image-holder{
+          background: $white;
+        }
+        &:hover .image-holder i, &:focus .image-holder i{
+          color: $default;
+        }
+         &:hover span,  &:focus span{
+           color: $default;
+         }
+      }
+    }
+    .active{
+      background-color: $white !important;
+      .image-holder{
+        background-color: $white !important;
+        i{
+          color: $default;
+        }
+      }
+      a span{
+        color: $default;
+      }
+    }
+  }
+  //  ##################################css for Search Bar ###############################
+  .Mhc-search{
+position: relative;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    background: $white;
+    border-radius: 10px;
+    .input-group-text{
+      background: transparent !important;
+      height: calc(1.4em + 0.75rem + 15px);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      img{
+        height: 20px;
+        width: auto;
+      }
+      .mhc-icon{
+        color:$default
+      }
+    }
+    .form-control{
+      border-left: 0px;
+      height: calc(1.4em + 0.75rem + 15px);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+  
+    }
+    .btn{
+      position: absolute;
+      right: 10px;
+      top: 6px;
+      z-index: 99;
+      padding: 5px 15px !important;
+      @media only screen and (max-width: 767.98px) {
+         display: none !important;
+      }
+    }
+    .mrr{
+      right: 100px !important;
+      @media only screen and (max-width: 767.98px) {
+
+        right: 10px !important;
+      }
+    }
+    .search-close{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 99;
+      padding: 6px 0px !important;
+      background: transparent;
+      border-width: 0px;
+    }
+  }
+  .mhc-search-dropdown{
+    border:solid 1px $light-border;
+    background: $white;
+    position: absolute;
+    transform: translate(0px, 0px);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    width: 100%;
+    z-index: 999;
+    .search-header{
+      padding: 0.625rem 1.6rem;
+      background-color: $search-bg-dark;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color:$default
+    }
+    .search-body{
+      ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        li{
+          a{
+            text-decoration: none;
+            color: $default;
+            font-size: 1rem;
+            padding: 1rem;
+          display: block;
+            .text-cricle{
+              width: 40px;
+      height: 40px;
+      border: solid 1px $white_mute;
+      background: $white_mute;
+      border-radius: 50%;
+      text-align: center;
+      padding: 5px;
+      font-size: 20px;
+      color: $black;
+      margin-right: 15px;
+            }
+          }
+          p{
+            font-weight: 700;
+            margin-bottom: 5px;
+          }
+           span{
+             font-size: 0.875rem;
+           }
+  
+           &:hover{
+             background-color:#f4f4f4;
+           }
+          // close a
+        }
+       
+      }
+      .active{
+        background-color:#f4f4f4;
+      }
+    }
+  }
+
+  // ############################# css for Register Form#######################################
+
+
+  .mhc-register-form{
+    .mhc-user-profile{
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      border-radius: 100%;
+      overflow: hidden;
+      position: relative;
+      @media only screen and (max-width: 767.98px) {
+        width: 80px;
+        height: 80px;
+      }
+      @media only screen and (max-width: 575.98px) {
+        width: 60px;
+        height: 60px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include translate(-50%, -50%)
+       
+      }
+    }
+
+  }
+  .whatapp{
+    width: auto;
+    height: 16px;
+    margin-right: 3px;
+  }
+  .mhc-tabs{
+    .nav-tabs{
+      display: inline-flex;
+      border: 1px solid $light-border;
+      padding: 0px;
+      border-radius: 10px;
+      flex-wrap: nowrap;
+      @media only screen and (max-width: 575.98px) {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+
+      }
+      .nav-item{
+        position: relative;
+        .nav-link{
+          margin-top: -1px;
+          border-radius: 10px !important;       
+        color: $default;
+        min-width: 100px;
+        @media only screen and (max-width: 575.98px) {        
+                
+    padding: 6px 6px;
+margin-left: -1px;
+white-space: nowrap;
+        }
+          &.active{
+            color: $white;
+            background-color: $primary;
+            border-color: $primary;
+            border-radius: 10px !important;
+            &::after{
+              content: "";
+            }
+          }
+          &:hover, &focus{
+            border-color: $primary $primary $primary;
+            color: $white;
+            background-color: $primary;
+            border-radius: 10px !important;
+            &::after{
+              content: "";
+            }
+          }
+          &::after{
+            content: "\e80e";
+            background:$light-border;
+            font-family: "mhc-icon";
+            font-weight: normal;
+               position: absolute;
+               right: 0px;
+       width: 1px;
+          }
+  
+          
+        }
+        &:last-child{
+          .nav-link{
+            &::after{
+              content: "" !important;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+     .mhc-tabs-borderless{
+      .nav-tabs .nav-item .nav-link::after{
+        content: " " !important;
+        background: $white !important;
+      }
+     }
+//Hospital tab
+.hospital-tab {
+  .hospital-card {
+      width: 100%;
+      min-height: 100%;
+      border: solid 1px $light-border;
+      border-radius: 10px;
+      .hospital-img {
+        width: auto;
+        height: 40px;
+      }
+  }
+}
+.mhc-hopistal-list{
+  li{
+    margin: 0px 10px;
+    // &:first-child{
+    //   margin-left: 0px;
+    // }
+    // &:last-child{
+    //   margin-right: 0px;
+    // }
+    @media only screen and (max-width: 991.98px) {
+      width: 30%;
+    }
+    @media only screen and (max-width: 767.98px) {
+      width: 46%;
+    }
+    @media only screen and (max-width: 575.98px) {
+      width: 100%;
+    }
+  }
+}
+.mhc-hospital{
+  margin:0px 15px 15px 0px;
+  cursor: pointer;
+     width: 100%;
+      min-height: 100%;
+      border: solid 1px $light-blue-border;
+      border-radius: 10px;
+      padding:10px;
+      text-align: center;
+}
+
+.mhc-partner{
+  .logo{
+    padding-right: 15px;
+    border-right: solid 1px $default;
+    img{
+      width: auto;
+      height: 40px;
+    }
+   
+  }
+  .partner-hopsitalName{
+margin: 0px 0px 0px 15px;
+  }
+}
+.mhc-mobile-tabs{
+  @media only screen and (min-width: 992px) {
+    .collapse:not(.show) {
+      display: block !important;
+  }
+  .accordion-button::after{
+   display: none;
+  }
+  .accordion-header{
+    display: none;
+  }
+  }
+  .accordion-item{
+    border:solid 0px $white;
+    .accordion-header{
+    
+      .accordion-button{
+        background-color: $primary-light;
+       border-radius: 10px;
+        font-weight: 500;
+        color: $default;
+        padding: 10px 16px;
+        &:after{
+          background-image:url("../../assets/images/ionic-ios-arrow-back.svg");
+          background-size: 15px;
+          width: 16px;
+          height: 16px;  
+      }
+      &:not(.collapsed)::after{
+          background-image:url("../../assets/images/ionic-ios-arrow-back.svg");
+          background-size: 15px; 
+          transform: rotate(-180deg);
+      }
+      }
+      [aria-expanded="true"]{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+    }
+    .accordion-body{
+      background-color: $primary-light;
+      padding: 10px 16px;
+      border-radius: 10px;
+      @media only screen and (max-width: 991.98px) {
+        border-top: solid 1px $light-border;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+      }
+      h3{
+        font-size: 1.063rem;
+        @media only screen and (max-width: 991.98px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.mhc-filter-btn{
+  cursor: pointer;
+  img{
+    width: 25px;
+    margin-left: 15px;
+    height: auto;
+  }
+}
+
+.mhc-consult-type{
+  @media only screen and (max-width: 575.98px) {
+font-size: 0.938rem;
+  }
+  .btn{
+    @media only screen and (max-width: 991.98px) {
+position: absolute;
+right: 0px;
+    top: -5px;
+    }
+  }
+  .date-time{
+    @media only screen and (max-width: 991.98px) {
+      position: absolute;
+      right: 0px;
+          top: 2px;
+          }
+  }
+}
+.mhc-dector-card{
+  border:solid 1px $light-border;
+  border-radius: 10px;
+  padding: 15px;
+  .img-holder{
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    border: solid 1px $light-border;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: 7px 0px;
+      @include translate(-50%, -50%)
+       }
+  }
+  .text-tittle{
+    font-size: 1.063rem;
+    @media only screen and (max-width: 575.98px) {
+      font-size: 1rem;
+    }
+  }
+  .sub-text{
+    font-size: 0.85rem;
+margin: 0px;
+  }
+  .icon{
+    width: 15px;
+    height: 15px;
+  }
+  .btn{
+    padding: 0.4rem 1.2rem !important;
+  }
+  .px-1{
+    padding-right: 0.1rem!important;
+    padding-left: 0.1rem!important;
+  }
+  .fs-6{
+    font-size: 0.813rem !important;
+  }
+}
+
+.mhc-filter{
+  height: 220px;
+  overflow: auto;
+}
+
+.mhc-fliter-border-right{
+  border-right: solid 1px $light-border;
+  @media only screen and (max-width: 991.98px) {
+    border-right: solid 0px $light-border;
+  }
+}
+.mhc-fliter-border-bottom{
+  border-bottom: solid 1px $light-border;
+  @media only screen and (max-width: 991.98px) {
+    border-bottom: solid 0px $light-border;
+  }
+}
+.fliter-btn{
+  @media only screen and (max-width: 991.98px) {
+  width: 100%;
+  }
+}
+.mhc-dector-profile-card{
+  display: flex;
+  align-items: start;
+  .img-holder{
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    border: solid 1px $light-border;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include translate(-50%, -50%)
+       }
+  }
+  .text-tittle{
+    font-size: 1.063rem; 
+    @media only screen and (max-width: 575.98px) {
+      font-size: 1rem;
+    }
+  }
+  .sub-text{
+    font-size: 0.813rem;
+    line-height: 16px;
+    color: lighten($default,10%);
+  }
+  .fs-6{
+    font-size: 0.813rem !important;
+  }
+
+}
+.mhc-dector-profile-text{
+  color: lighten($default, 10%);
+  margin-bottom: 0px;
+}
+.more-details-tab{
+  .accordion-button:not(.collapsed){
+    background-color: transparent;
+    box-shadow: none !important;
+  }
+  .accordion-item{
+    border:solid 0px $white;
+    .accordion-button{
+      padding: 10px 0px 0px;
+      color: $primary;
+      font-weight: 500;
+      &::after{
+        background-image:none !important
+      }
+      &[aria-expanded="true"]{
+        padding: 0px !important;
+      }
+    }
+    .accordion-body{
+      padding: 0px !important;
+    }
+  }
+}
+.mhc-profile-dector-card{
+  border:solid 1px $light-border;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  @media only screen and (max-width: 575.98px) {
+    padding: 10px 10px;
+    margin-right: 10px;
+  }
+  img{
+    max-width: 80px;
+    @media only screen and (max-width: 575.98px) {
+      max-width: 70px;
+    }
+  }
+  p{
+    font-size: 0.813rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: lighten($default, 10%);
+  }
+  &.active{
+    border:solid 1px darken( $light-border, 15%) ;
+    box-shadow: 0 11px 10px 0 rgba(0, 0, 0, 0.16);
+    p{
+      color: $default;
+    }
+  }
+}
+.mhc-slot-avability{
+  .mhc-bg{
+    width:20px;
+    height: 20px;
+    background: #fff;
+  }
+  .mhc-text{
+    font-size: 1rem;
+    margin-left: 10px;
+    line-height: 18px;
+    @media only screen and (max-width: 575.98px) {
+      font-size: 0.9rem;
+    }
+  }
+  .Available{
+    background: $primary-ligthen;
+  }
+  .Booked{
+    background: $default-light;
+  }
+  .Selected{
+    background: $primary-darkLight;
+    
+  }
+}
+.mhc-calendar{
+  height: auto;
+    overflow: hidden;
+  .pickadate--root{
+    width: 100%;
+    max-width: 100% !important;
+    border: solid 0px;
+    background: $white !important;
+    justify-content: center;
+    .pickadate--header{
+      padding: 0px 0px 20px !important;
+    }
+    .pickadate--button__today{
+      display: none !important;
+    }
+    .pickadate--button__previous{
+      position: absolute;
+    left: 36%;
+    background: $white;
+    svg{
+      fill:$default !important;
+      height: 16px !important;
+    }
+    color: $default;
+    @media only screen and (max-width: 767.98px) {
+      left: 32%;
+    }
+    @media only screen and (max-width: 575.98px) {
+      left: 22%;
+    }
+    }
+    .pickadate--button__next{
+      position: absolute;
+      right: 35%;
+      background: $white;
+      color: $default;
+      svg{
+        fill:$default !important;
+        height: 16px !important;
+      }
+      @media only screen and (max-width: 767.98px) {
+        right: 32%;
+      }
+      @media only screen and (max-width: 575.98px) {
+        right: 22%;
+      }
+    }
+   
+    .pickadate--monthAndYear_month{
+      color: $default !important;
+      font-weight: 500;
+      font-size: 0.938rem !important;
+    }
+    .pickadate--monthAndYear_year{
+      color: $default !important;
+      font-weight: 500; 
+      font-size: 0.938rem !important;
+    }
+    .pickadate--monthAndYear{
+      justify-content: center;
+    }
+    .pickadate--button__next:focus, .pickadate--button__previous:focus{
+      border-color: $white !important;
+    }
+    .pickadate--button__next:hover svg, .pickadate--button__previous:hover svg{
+      fill: $default !important;
+    }
+   
+  }
+  .pickadate--grid{
+    background-color: $white !important;
+  }
+  .pickadate--grid_label{
+    color: $black !important;
+    font-weight: 400;
+    font-size: 0.938rem;
+    // border:solid 1px $white;
+  }
+
+  .pickadate--grid_cell{
+    font-size: 0.875rem;
+    background: $primary-ligthen;
+    border: solid 1px #fff;
+    color: $black !important;
+  // border:solid 1px $white;
+  }
+  .pickadate--grid_cell__selected > div, .pickadate--grid_cell__selected:hover > div{
+    background-color: $transparent !important;
+    color: $white !important;
+    font-weight: 400 !important;
+  }
+  .pickadate--grid_cell__today.pickadate--grid_cell__selected > div:after{
+    border-width: 0px ;
+  }
+  .pickadate--grid_cell:nth-child(2){
+    background-color: $default-light !important;
+    &:hover{
+      color: $default !important;
+    }
+    &.pickadate--grid_cell__selected > div, .pickadate--grid_cell__selected:hover > div{
+      background-color: $transparent !important;
+      color: $default !important;
+      font-weight: 400 !important;
+    }
+  }
+  .pickadate--grid_cell:nth-child(4){
+    background-color: $default-light!important;
+    &:hover{
+      color: $default !important;
+    }
+    &.pickadate--grid_cell__selected > div, .pickadate--grid_cell__selected:hover > div{
+      background-color: $transparent !important;
+      color: $default !important;
+      font-weight: 400 !important;
+    }
+  }
+  .pickadate--grid_cell:nth-child(6){
+    background-color: $default-light !important;
+    &:hover{
+      color: $default !important;
+    }
+    &.pickadate--grid_cell__selected > div, .pickadate--grid_cell__selected:hover > div{
+      background-color: $transparent !important;
+      color: $default !important;
+      font-weight: 400 !important;
+    }
+  }
+  .pickadate--grid_cell:hover{
+    background: $primary-darkLight;
+    color: $white !important;
+  }
+  .pickadate--grid_cell__today > div {
+    border: 0px solid #e5e5e5;
+}
+.pickadate--grid_label, .pickadate--grid_cell{
+  min-width: 15px !important;
+}
+.pickadate--grid_cell:hover > div, .pickadate--grid:focus:not(:active) .pickadate--grid_cell__highlighted:not(.pickadate--grid_cell__selected) > div, .pickadate--grid__focused:not(:active) .pickadate--grid_cell__highlighted:not(.pickadate--grid_cell__selected) > div{
+  background-color: $transparent !important;
+}
+
+.pickadate--grid_cell__disabled, .pickadate--grid_cell__outOfView{
+  opacity: 0;
+    transform: scale(1);
+    visibility: visible;
+    cursor: context-menu !important;
+}
+}
+
+.time-slot-btn{
+  border:solid 1px $light-border;
+  color: $default;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  &:hover,&:focus{
+    background: $primary-darkLight;
+    color: $white;
+    border-color:  $primary-darkLight;
+  }
+  &.selected{
+    background: $default-light !important;
+    color: $black;
+    border-color: darken($default-light, 5%)  !important;
+    cursor: not-allowed;
+    &:hover{
+      color: $default !important;
+    }
+  }
+}
+.hospitallog{
+  height: 14px;
+  display: inline;
+  margin-left: 5px;
+}
+.mhc-profile-tabs{
+  .accordion-item{
+    border:solid 1px $white;
+    border-radius: 0px;
+    .accordion-button{
+      background: $default-light;
+      margin-bottom: 0px;
+      border-radius: 0px;
+      font-weight: 500;
+      color: $default;
+      &:after{
+        background-image:url("../../assets/images/ionic-ios-arrow-back.svg");
+        background-size: 13px;
+        width: 16px;
+        height: 16px;  
+    }
+    &:not(.collapsed)::after{
+        background-image:url("../../assets/images/ionic-ios-arrow-back.svg");
+        background-size: 13px; 
+
+    }
+    &:not(.collapsed){
+        color: $primary;
+        background: $default-light;
+        box-shadow: none;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+    }
+    &[aria-expanded="false"]{
+    margin-bottom: 10px;
+    }
+    }
+    .accordion-body{
+      padding: 0px;
+    }
+  }
+}
+
+
+//Homecare Services
+.homecare-services {
+  .homecare-service-card {
+      width: 100%;
+      min-height: 100%;
+      border: solid 1px $light-border;
+      border-radius: 10px;
+  }
+  .homecare-service-card .img-holder {
+      background: #fff4f3;
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+      border-radius: 50%;
+      margin: auto;
+      position: relative;
+  }
+  .homecare-service-card .img-holder .image {
+      width: 40px;
+      height: 40px;
+      left: 50%;
+      top: 50%;
+  }
+}
+
+//Homecare Categories
+.homecare-category {
+  .homecare-category-card {
+      width: 100%;
+      min-height: 100%;
+      border: solid 1px $light-border;
+      border-radius: 10px;
+  }
+}
+
+.homecare-details-modal {
+  .vendor-image {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+
+.mhc-bordered-checkbox{
+  border:solid 1px $light-border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+.imgholder{
+  width: 60px;
+  height: 60px;
+  border:solid 1px $light-border;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+  img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%, -50%)
+  } 
+}
+p{
+  color: $default;
+  font-size: 1rem;
+  line-height: 18px;
+  cursor: pointer;
+  small{
+    font-size: 0.813rem;
+  }
+}
+}
+
+.mhc-upload{
+  position: relative;
+  input{
+    position: relative;
+   &::placeholder{
+     opacity: 0;
+     color: #fff !important;
+   }
+    &::-webkit-file-upload-button{
+      visibility: hidden;
+     display: none;
+    }
+    &::after{
+      content: " ";
+      background-image:url("../../assets/images/upload.svg");
+      background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    right: 5px;
+    top: 3px;
+    z-index: 999;
+    height: 30px;
+    width: 25px;
+    background-size: 15px;
+    }
+    &:focus ~ .profile-pic, &:not(:placeholder-shown) ~ profile-pic{
+      transform: scale(0.85) translateY(-1.2rem) translateX(0.15rem) !important;
+      background: $white;
+      opacity: 1;
+      color: $primary;
+      width: auto;
+      left: 0px;
+      padding: 0.475rem 0.75rem;
+      top: 0px;
+      padding-left: 5px;
+      z-index: 99;
+    }
+  }
+  .profile-pic{
+    position: absolute;
+    background: $white;
+    height: calc(1.4em + 0.65rem + 0px);
+    padding: 0.375rem 0.75rem;
+    top: 1px;
+    left: 5px;
+    color: $primary;
+  }
+}
+.list-login{
+  li{
+    @media only screen and (max-width: 767.98px) {
+      width: 100%;
+    }
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.anitClock{
+  position: relative;
+  margin-left: 10px;
+  .anti-img{
+    width: 22px;
+    animation: rotation 2s infinite linear;
+  }
+ 
+ .otp-time{
+  position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
+.mhc-dob {
+ input{
+  width: 100%;
+  height: calc(1.6em + 0.75rem + 2px) !important;
+   border: solid 1px $border-color;
+   border-radius: 0.25rem;
+   padding: 1rem 2.25rem 0.375rem 0.75rem;
+   cursor: pointer;
+   background: $transparent;
+&:focus ~ label, &:valid ~ label{
+  transform: scale(0.85) translateY(-1.2rem) translateX(0.15rem) !important;
+    background: #fff;
+    opacity: 1;
+    color: #EA5D6E;
+}
+
+ }
+ .icon-calendar{
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  z-index: -1;
+ }
+ .pickadate--root{
+  min-width: 17em !important;
+
+
+ }
+ .pickadate--input-root{
+   z-index: 999;
+ }
+ .pickadate--grid_cell{
+   background-color: $white;
+ }
+ .pickadate--grid_cell__disabled, .pickadate--grid_cell__outOfView{
+  opacity: 0.7;
+  transform: scale(1);
+  background: #fff !important;
+ }
+ .pickadate--grid_label{
+  background-color: $white;
+ }
+ .pickadate--grid_cell:hover > div, .pickadate--grid:focus:not(:active) .pickadate--grid_cell__highlighted:not(.pickadate--grid_cell__selected) > div, .pickadate--grid__focused:not(:active) .pickadate--grid_cell__highlighted:not(.pickadate--grid_cell__selected) > div{
+   background-color: $primary;
+   color: $white;
+ }
+ [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+  background-color: $white;
+ }
+ .pickadate--button__today{
+   display: none;
+ }
+ .pickadate--element{
+   justify-content: center;
+ }
+ .pickadate--monthAndYear_year, .pickadate--monthAndYear_month{
+   color: $default;
+   font-size: 1rem;
+    font-weight: 500;
+ }
+ .pickadate--button__previous svg, .pickadate--button__next svg{
+   height: 0.875rem;
+ }
+ .pickadate--button__previous:hover svg, .pickadate--button__today:hover svg, .pickadate--button__next:hover svg, .pickadate--button__previous:active svg, .pickadate--button__today:active svg, .pickadate--button__next:active svg{
+   fill: $default;
+ }
+ .pickadate--button__previous{
+   position:absolute;
+   left: 0px;
+ }
+ .pickadate--button__next{
+  position:absolute;
+  right: 0px;
+ }
+ .pickadate--button__previous:focus, .pickadate--button__today:focus, .pickadate--button__next:focus{
+   border-color: $white;
+ }
+ .pickadate--grid_cell__selected > div, .pickadate--grid_cell__selected:hover > div{
+  background:$primary
+ }
+}
+.mhc-selectbox{
+  position: relative;
+ label{
+  position: absolute;
+     transform: translate(10px, 10px) ;
+      top: 0px;
+      left: 0px;
+      font-size: 0.938rem;
+      transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;  
+      font-weight: 400;
+   z-index: 1;
+      color:$default;
+    }
+  .form-select:focus label, .form-select:valid ~ label {
+    transform: scale(.85) translateY(-0.6rem) translateX(0.15rem) !important;
+       background: #fff;
+      padding: 0px 5px;
+    z-index: 2;
+    color:$primary;
+    }
+}
+
+.mhc-patient-details {
+  background: lighten($primary-darkLight,25%);
+  padding:15px;
+  border-radius: 10px;
+}
+.mhc-payment-details{
+  background: lighten($bg-gray,25%);
+  padding:15px;
+  border-radius: 10px;
+}
+.mhc-instruction-list{
+  list-style-type: none;
+  li{
+    padding: 5px 0px;
+    &::before{
+      content: '\E802';
+      font-family: "mhc-icon";
+      padding: 3px 10px 7px 0px;
+      text-indent: 20px;
+      margin-left: -20px;
+
+    }
+  }
+}
+.mhc-multiImage{
+  .image-item{
+    width: 100px;
+    height: 100px;
+    border: solid 1px #424280;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    position: relative;
+
+    img{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include translate(-50%, -50%);
+      width: 100%;
+      width: 75%;
+    height: auto;
+    }
+  }
+  .mhc-add-more{
+    background: #e6e8f4;
+    border: solid 1px #e6e8f4;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100px;
+    height: 100px;
+    &::before{
+      content: "\e801";
+      font-family: "mhc-icon";
+    }
+}
+
+.close{
+  position: absolute;
+  z-index: 999;
+  right: 2px;
+  background: #fff;
+  padding: 0px;
+  background: transparent;
+  border: 0px;
+ @include rotate(-45deg);
+  &::before{
+    content: "\e801";
+    font-family: "mhc-icon";
+  }
+}
+
+}
+.multiview{
+  display: flex;
+  flex-wrap: wrap;
+    .image-item{
+      width: 100px;
+      height: 100px;
+      border: solid 1px #424280;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      position: relative;
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include translate(-50%, -50%);
+        width: 100%;
+        width: 100%;
+      height: auto;
+      }
+    }
+
+  }
+.mhc-check-service{
+  position: absolute;
+  right: 0px;
+  @media only screen and (max-width: 991.98px) {
+position: relative;
+  }
+}
+
+// ##################### Package Tabs css #################################
+.Package-btn-tabs{
+  .nav-tabs{
+    border:solid 1px $white;
+    .nav-item{
+      .nav-link{
+        border:solid 1px $light_dark;
+        border-radius: 5px !important;
+        margin-right: 10px;   
+        padding: 2px 7px;
+        min-width: 80px;
+        color: $default;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 575.98px) {
+          margin-top: 2px !important;
+          margin-left: 1px !important;
+        }
+        &:hover, &:active{
+          border-radius: 5px !important;
+          border-radius: 5px !important;
+          background: $primary;
+          color: $white;
+          border:solid 1px $primary;
+        }
+         &.active{
+          border-radius: 5px !important;
+          background: $primary;
+          color: $white;
+          border:solid 1px $primary;
+         }
+        &:after{
+          content: "" !important;
+        }
+      }
+    }
+ 
+ 
+  }
+
+}
+
+
+.mhc-package-tab{
+  border:solid 1px $light-border;
+  border-radius: 10px;
+  padding: 15px;
+  @media only screen and (max-width: 575.98px) {
+    font-size: 0.938rem;
+    padding: 10px;
+  }
+  .packg-tittle{
+    font-weight: 500;
+    font-size: 1rem;
+    @media only screen and (max-width: 575.98px) {
+      font-size: 0.938rem;
+    }
+  }
+  .packg-parm{
+    font-size: 0.813rem
+    i{
+      font-size: 0.813rem;
+    }
+  }
+  .pacg-icon{
+    height: 30px;
+    @media only screen and (max-width: 575.98px) {
+      height: 25px;
+    }
+  }
+  @media only screen and (max-width: 575.98px) {
+.form-check{
+  width: 100%;
+}
+  }
+}
+.callback{
+  position: absolute;
+  right: 0px;
+  @media only screen and (max-width: 1199.98px) {
+    position: relative;
+  }
+}
+.mhc-package-modal{
+  .modal-header{
+    display: block;
+    border-width: 0px;
+  
+    p{
+      font-size: 0.938rem;
+      margin-top: 5px;
+      color: lighten($default , 5%);
+    }
+    img{
+      width: auto;
+      height: 30px;
+      margin-right: 20px;
+    }
+  }
+  .accordion-item{
+    border:solid 1px $light-border;
+    margin-bottom: 10px;
+    .accordion-header{
+      .accordion-button{
+        padding: 10px 15px;
+        font-size: 0.938rem;
+        &:not(.collapsed){
+          color: $default;
+    background-color: $white_mute;
+    box-shadow: none;
+        }
+        &:after{
+          background-image:url("../../assets/images/ionic-ios-arrow-back.svg");
+          background-size: 13px;
+          width: 16px;
+          height: 16px;  
+      }
+      &:not(.collapsed)::after{
+          background-image:url("../../assets/images/ionic-ios-arrow-back.svg");
+          background-size: 13px; 
+          transform: rotate(-180deg);
+      }
+      }
+    }
+    .accordion-body{
+      padding: 0px 15px 10px;
+      background-color: $white_mute;
+      ul{
+        list-style-type: none;
+        li{
+          &::before{
+            content: "\E811";
+            font-family: "mhc-icon";
+            padding: 3px 10px 7px 0px;
+            text-indent: 20px;
+            margin-left: -20px;
+            color: #aaa;
+          }
+        }
+      }
+    }
+  }
+}
+.btn-close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-size: 12px;
+  &:focus{
+    box-shadow: none;
+  }
+}
+.mhc-package-details{
+  border:solid 1px $light-blue-border;
+  padding:10px 15px;
+  border-radius: 10px;
+  .border-bottom{
+    border-bottom: solid 1px $light-blue-border;
+    padding-bottom: 5px;
+  }
+  .icon-trash-empty{
+    font-size: 1rem;
+    margin-left:7px;
+  }
+  .hospital-icon{
+height: 45px;
+width: auto;
+  }
+}
+.hospital-img{
+  width: auto;
+  height: 40px;
+}
+.mhc-package-details-confirm{
+  border:solid 1px $light-blue-border;
+  border-radius: 10px;
+  .mhc-test-details{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:solid 1px $light-blue-border; 
+    @media only screen and (max-width: 767.98px) {
+flex-direction: column;
+    }
+    .left-column, .right-column{
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 10px 15px;   
+    width: 50%;
+    }
+    .right-column{
+      border-left: solid 1px $light-blue-border;
+      @media only screen and (max-width: 767.98px) {
+        border-left: solid 0px $light-blue-border;
+        padding-top: 0px;
+            }
+
+            ul li{
+              padding: 5px 0px;
+              font-weight: 500;
+            }
+    }
+             &:first-child{
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+             }
+    &:last-child{
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom:solid 0px $light-blue-border;
+    
+    }
+  }
+}
+
+.mhc-download{
+  background: #f2f2f2;
+  .icon-downlod{
+    height: 40px;
+    width: auto;
+  }
+}
+// ############################ Tests #########################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mhc_payment_details new
+.div_ul_name{
+  border: 1px solid #c7c7c7;
+}
+
+.whatsapp_width{
+  width: 100px;
+}
+.ul_name{
+  margin-left: -11px;
+}
+.ul_name .li_name{
+  list-style-type: none;
+  padding: 5px 0px;
+}
+.ul_name .li_name::before {
+  content: "\E811";
+  font-family: "mhc-icon";
+  padding: 3px 10px 7px 0px;
+  text-indent: 20px;
+  margin-left: -20px;
+  color: #aaa;
+}
+.vl1{
+    border-left: 1px solid #c7c7c7;
+    // height: 200px;
+    margin-left: -50px;
+}
+.form-check.mhc-border-check {
+  border: 1px solid #c7c7c7;
+  padding: 25px;
+  border-radius: 10px;
+}
+.lab-icon{
+  width: auto;
+  height: 25px;
+}
+
+.mhc-details-border{
+  border-right: solid 1px $light-border;
+  @media only screen and (max-width: 991.98px) {
+    border-right: solid 0px $light-border;
+    border-bottom: solid 1px $light-border;
+  }
+}
+.mhc-vender-checkbox{
+  border: solid 1px $light-border;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+.form-check-input{
+    margin-left: 0px !important;
+  }
+  p{
+    font-size: 0.75rem;
+    margin-right: 10px;
+  }
+  .brand-name{
+    height: 30px;
+    width: auto;
+  }
+  .discount-icon{
+    height: 35px;
+    width: auto;
+    margin-right: 15px;
+  }
+  .rates{
+    font-size: 1rem !important;
+    margin-right: 25px !important;
+  }
+}
+
+.mhc-test-bordered-checkbox{
+  border:solid 1px $light-border;
+  padding: 10px 10px 10px 2.3rem;
+  border-radius: 10px;
+}
+
+//mhc_blog
+.mhc-blog-card{
+  border:solid 1px $light-border;
+  border-radius: 10px;
+ .btn{
+   i{
+     margin-left: 5px;
+   }
+ }
+}
+.mhc-recent-post{
+  background-color: #fafafa;
+  border:solid 1px #eeeeee;
+  border-radius: 10px;
+  .card-header{
+    background-color:#eeeeee;
+    background: transparent;
+    padding: 1rem;
+  }
+  .card-body{
+    padding: 0rem;
+    .blog-post{
+      padding: 1rem;
+      border-bottom:solid 1px #eeeeee;
+      display: flex;
+      align-items: center;
+      &:last-child {
+        border-bottom:solid 0px #eeeeee;
+      }
+      img{
+        width: 100%;
+    height: auto;
+      }
+     a{
+       text-decoration: none;
+       color: $default;
+      
+     }
+    }
+ 
+  }
+}
+.mhc-blog-details{
+  .figure{
+    width: 100%;
+    position: relative;
+    padding-right: 10px;
+    @media only screen and (max-width: 991.98px) {
+      padding-right: 0px;
+    }
+    .figure-img{
+      width: 100%;
+    }
+    .figure-caption{
+      position: absolute;
+      font-size: 1.5rem;
+      bottom: 0px;
+      left: 0px;
+      margin-bottom: 8px;
+      color: #000;
+      font-weight: 700;
+      width: 100%;   
+      padding: 40px 10px 15px;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+      @media only screen and (max-width: 991.98px) {
+        font-size: 1.3rem;
+      }
+      @media only screen and (max-width: 768.98px) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (max-width: 575.98px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  .blog-details-body{
+    padding: 10px;
+  }
+}
+.blog-search{
+  width:70%;
+  @media only screen and (max-width: 575.98px) {
+    width:100%
+  }
+}
+
+// ######################################Partner##################################################
+.mhc-partner-banner{
+  width: 100%;
+  height: 500px;
+  background: #f8f8f8;
+  background-image: url(../images/mhc-partner.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  @media only screen and (max-width: 1199.98px) {
+    height:450px;
+  }
+  @media only screen and (max-width: 991.98px) {
+    height:380px;
+  }
+  @media only screen and (max-width: 767.98px) {
+    height:220px;
+  }
+  @media only screen and (max-width: 575.98px) {
+    background-image: none;
+  }
+  h1{
+    font-size: 2.25rem;
+    margin-top: 50px;
+    margin-bottom: 20px !important;
+    @media only screen and (max-width: 1199.98px) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: 991.98px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 767.98px) {
+      margin-top: 10px;
+      margin-bottom: 15px !important;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.mhc-partner-bg{
+  background-image: url(../images/mhc-partner-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+ 
+
+}
+.mhc-partner-padding{
+  padding:50px 0px;
+  @media only screen and (max-width: 767.98px) {
+    padding:30px 0px; 
+  }
+  @media only screen and (max-width: 575.98px) {
+    padding:20px 0px; 
+  }
+}
+.mhc-partner-tabs{
+  .nav-item{
+    position: relative;
+  }
+.nav-pills{
+  .nav-link{
+    color: $default;
+    font-weight: 500;
+ cursor: pointer;
+ border-bottom: solid 1px $light-border;
+ border-radius: 0px;
+ padding: 1rem 1rem 1rem 1rem;
+ margin-left: 20px;
+ text-indent: -20px;
+  .pils-icon{
+    width: 15px;
+    height: auto;
+  }
+  }
+
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: $transparent !important;
+  font-weight: 700;
+&:after{
+  content: "\E819";
+  font-family: "mhc-icon";
+  font-weight: normal;
+     position: absolute;
+     right: 0px;
+  color: $primary;
+  @media only screen and (max-width: 767.98px) {
+@include rotate(90deg);
+top:20px;
+right:20px
+  }
+}
+}
+.tab-content{
+  h2{
+    border-left: solid 5px $primary;
+    font-size: 1.2rem;
+    padding-left: 15px;
+    margin-bottom: 16px;
+  }
+  @media only screen and (max-width: 767.98px) {
+padding:2rem 1.2rem;
+  }
+}
+}
+
+
+.partner-services{
+  text-align: center;
+  img{
+    width: auto;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  h6{
+    @media only screen and (max-width: 575.98px) {
+      font-size: 0.938rem;
+    }
+  }
+}
+
+
+// ########################################## Patient Portal css ##############################################
+
+.mhc-dashboard-card{
+  border:solid 1px $border-color;
+  border-radius: 10px;
+  box-shadow: 0 3px 23px 0 rgba(72, 72, 72, 0.05);
+  background-color: $white;
+  padding:1rem;
+  position: relative;
+  .wallet-balance{
+    position: absolute;
+    right: 1rem;
+    img{
+      height: 20px;
+      margin-right: 10px;
+    }
+    @media only screen and (max-width: 575.98px) {
+position: relative;
+margin-left: 1rem;
+margin-bottom: 1rem;
+    }
+  }
+}
+.mhc-patient-back{
+  text-decoration: none;
+  color: $default;
+  &:hover{
+    color: $primary;
+  }
+  img{
+    height: 16px;
+  }
+}
+.mhc-patient-card{
+  padding: 10px;
+  border-radius: 10px;
+  border:solid 1px $border-color1;
+  cursor: pointer;
+  @media only screen and (max-width: 575.98px) {
+
+  }
+  .img-holder{
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #c7c7c7;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include translate(-50%, -50%)
+    }
+  }
+  p{
+   margin: 0px;
+   font-weight: 600;
+   font-size: 1rem;
+  }
+  span{
+    font-size: 0.813rem;
+  }
+  &:hover{
+    background-color: $bg-color;
+    border:solid 1px $border-color2
+  }
+  &.active{
+    background-color: $bg-color;
+    border:solid 1px $border-color2
+  }
+}
+.mhc-patient-dashboard {
+
+  a{
+    color: $default;
+    text-decoration: none;
+    .mhc-card{ 
+      border-radius: 10px;
+      box-shadow: 0 3px 23px 0 rgba(72, 72, 72, 0.05);
+      padding:1rem;
+      border: solid 1px;
+      min-height: 146px;
+      img{
+        height: 40px;
+        width: auto;
+      }
+      h4{
+        font-size: 1.063rem;
+        margin:10px 0px 5px;
+      }
+     
+    }
+ 
+  }
+  & .row .col-lg-3:nth-child(1) .mhc-card{
+    background-color: $white_mute;
+    border-color: $border-color3;
+  }
+  & .row .col-lg-3:nth-child(2) .mhc-card{
+    background-color: $bg-color1;
+    border-color: $border-color4;
+  }
+  & .row .col-lg-3:nth-child(3) .mhc-card{
+    background-color: $bg-color2;
+    border-color: $border-color5;
+  }
+  & .row .col-lg-3:nth-child(4) .mhc-card{
+    background-color: $bg-color3;
+    border-color: $border-color6;
+  }
+  & .row .col-lg-6:nth-child(5) .mhc-card{
+    background-color: $bg-color4;
+    border-color: $border-color7;
+  }
+  & .row .col-lg-3:nth-child(6) .mhc-card{
+    background-color: $bg-color5;
+    border-color: $border-color8;
+  }
+  & .row .col-lg-3:nth-child(7) .mhc-card{
+    background-color: $bg-color6;
+    border-color: $border-color9;
+  }
+
+}
+
+
+// ############################ css MyBookig ################################
+.mhc-phone-call{
+  background: $black;
+  border-radius: 10px;
+  color: $white;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  // position: absolute;
+  // right: 0px;
+  cursor: pointer;
+  max-width: 170px;
+  @media only screen and (max-width:767.98px) {
+    position: relative !important;
+    margin-bottom: 1rem;
+  }
+  .mhc-icon {
+    color: $black;
+    background: $white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.mhc-patient-details-card{
+  padding: 10px 16px;
+  border-radius: 10px;
+  border:solid 1px $border-color1;
+  margin-bottom: 1.2rem;
+  @media only screen and (max-width:575.98px) {
+    padding: 10px;
+  }
+}
+.mhc-booking{
+  .tittle{
+    font-size: 1.063rem;
+    font-weight: 700;
+    @media only screen and (max-width: 575.98px) {
+      font-size: 1rem;
+    }
+  }
+
+  .dctor-img{
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    border: solid 1px #c7c7c7;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+    @media only screen and (max-width:575.98px) {
+      margin-right: 5px;
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include translate(-50%, -50%)
+    }
+  }
+  .hospital-icon{
+    height: 1rem;
+    width: auto;
+  }
+}
+.patient-details{
+  border-top: solid 1px $border-color1;
+  border-bottom: solid 1px $border-color1;
+  padding: 1rem 0px;
+  display: flex;
+  justify-content: space-around;
+  @media only screen and (max-width:991.98px) {
+    flex-direction: column;
+  }
+  .content{
+    border-right: solid 1px $border-color1;
+    padding-right: 20px;
+    @media only screen and (max-width:991.98px) {
+      border-right: solid 0px $border-color1;
+      border-bottom: solid 1px $border-color1;
+      padding: 10px;
+    }
+    .hospital-icon{
+      height: 15px;
+      width: auto;
+        }
+  }
+
+  & .content:last-child{
+    border-right: solid 0px $border-color1;
+    border-bottom: solid 0px $border-color1;
+  }
+}
+
+.mhc-homecare{
+  .tittle{
+    font-size: 1.063rem;
+    font-weight: 700;
+    @media only screen and (max-width: 575.98px) {
+      font-size: 1rem;
+    }
+  }
+  .hopsital-logo{
+    height: 45px;
+  }
+}
+
+.mhc-medicines{
+
+  border-radius: 10px;
+  border:solid 1px $border-color1;
+  margin-bottom: 1.2rem;
+  .card-body{
+    padding: 10px 16px;
+  }
+  .tittle{
+    font-size: 1.063rem;
+    font-weight: 700;
+    @media only screen and (max-width: 575.98px) {
+      font-size: 1rem;
+    }
+  }
+  .hopsital-logo{
+    height: 35px;
+  }
+  .lab-logo{
+    height: 25px;  
+  }
+
+}
+.mhc-collapse{
+  background: lighten($bg-color7, 10%);
+  padding: 10px 16px;
+  border: solid 1px  lighten($bg-color7, 10%);;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: -1px;
+  .order-delivered{
+    margin: 0px 0px 0px 15px;
+    position: relative;
+    &:before{
+      content: '';    
+      background: url(../images/care-continuum.svg);
+      width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  top: -3px;
+    }
+    span{
+      margin-left: 10px;
+  font-weight: 700;
+    }
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  ._2Jtxm:first-child::before {
+    content: '' !important;
+  }
+  ._2Jtxm:last-child::before {
+    content: none !important;
+
+  }
+  ._2Jtxm:last-child{
+    height: 0px !important;
+  }
+}
+.Mhc-progressbar{
+  @media only screen and (max-width: 991.98px) {
+    padding: 1rem 0rem;
+  }
+ 
+  ul{
+    margin:0px 0px 30px;
+    @media only screen and (max-width: 991.98px) {
+      flex-direction: column;
+      align-items:flex-start;
+      margin:0px 0px 0px;
+    }
+  
+  }
+.step{
+  &::before{
+    background: lighten($bg-color8, 10%) !important;
+  }
+  @media only screen and (max-width: 991.98px) {
+    text-align: left;
+    height: 75px;
+ 
+    &::before{
+      height: 100%;
+      width: 1px;
+      right: 50%;
+      top: 15px;
+      left: 45%;
+      transform: translateY(0%);
+    }
+
+ 
+  }
+  span{
+    width: 14px !important;
+    height: 14px !important;
+    line-height: 14px !important;
+    background: $bg-color8 !important;
+    color: $bg-color8 !important;
+  }
+  .tittle{
+    font-size: 1rem;
+    color: $default;
+    white-space: unset;
+    margin-top: 10px;
+    .sub-tittle{
+      font-size: 0.875rem;
+    color: $default;
+
+    }
+    @media only screen and (max-width: 991.98px) {
+      width: 200px;
+      transform: translateX(0%);
+      top: 0%;
+      left: 0%;
+      width: 200px;
+      margin-left: 30px;
+    margin-top: 0px;
+      }
+  }
+}
+  .bth-wrapper{
+    display:none !important
+  }
+}
+
+.predcription-dector-card{
+  border-radius: 10px;
+  border:solid 1px $border-color1;
+  margin-bottom: 1.2rem;
+  .card-body{
+    padding:  16px;
+    .mhc-tittle{
+      font-size: 1.063rem;
+      font-weight: 700;
+      @media only screen and (max-width: 575.98px) {
+        font-size: 1rem;
+      }
+    }
+    .pdf-icon{
+      height: 40px;
+      width: auto;
+    }
+    .download-icon{
+      height: 15px;
+      width: auto;
+      cursor: pointer;
+    }
+  }
+}
+
+.mhc-appoinment-tabs{
+  .accordion-item{
+    border:solid 1px $border-color2;
+    margin-bottom: 7px;
+    border-radius: 7px;
+    &:first-of-type{
+      border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    .accordion-button{
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+    }
+    }
+  }
+  .accordion-button{
+    justify-content: space-between;
+    font-weight: 700;
+    background: $bg-color;
+    color: $default;
+    border-radius: 7px;
+    &:after{
+      display: none;
+    }
+    &[aria-expanded="true"]{
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom:solid 1px $border-color2;
+    }
+  }
+
+  .accordion-body{
+    .img-icon{
+      height: 35px;
+      width: auto;
+      margin-right: 1rem;
+    }
+  }
+}
